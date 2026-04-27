@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00b7ff"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,7 +16,10 @@
         android:layout_marginEnd="50dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/radius"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView"
@@ -46,6 +50,7 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/radius_button"
         android:text="ПАУЗА"
-        android:textColor="#00b7ff"/>
+        android:textColor="#00b7ff"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
